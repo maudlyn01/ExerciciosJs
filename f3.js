@@ -1,7 +1,17 @@
 /*3. Escreva uma função anônima que receba um array de strings e retorne a string
 com mais caracteres.
 */
-const stringMaisLonga = function(arr) {
-    return arr.reduce((a, b) => (a.length > b.length ? a : b));
-  };
-  console.log(stringMaisLonga(["Cogumelo","Lanche", "Cantina"]));
+const biggerString = function(array) {
+  let bigger = "";
+
+  for (let i = 0; i < array.length; i++) {
+
+    if (array[i].length > bigger.length) {
+      bigger = array[i];
+    }
+  }
+
+  return bigger;
+};
+
+  console.log(biggerString(["Cogumelo","Lanche", "Cantina"]));

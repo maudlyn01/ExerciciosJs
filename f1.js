@@ -1,7 +1,13 @@
 /*1. Crie uma função nomeada que receba um array de números e retorne a soma
 de todos os elementos.
 */
-function somaArray(arr) {
-    return arr.reduce((acc, val) => acc + val, 0);
+
+function sumNum(array) {
+  let sum = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i];
   }
-console.log(somaArray([20,4,50,6]));
+  return sum;
+}
+console.log(sumNum([20, 4, 50, 6]));

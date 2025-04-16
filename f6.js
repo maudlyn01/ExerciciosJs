@@ -1,0 +1,1 @@
+//6. Criae uma função que filtre números pares de um array.
