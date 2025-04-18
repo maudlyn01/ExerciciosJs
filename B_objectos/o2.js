@@ -4,8 +4,8 @@ const CARRO = {
     marca: "Mazda",
     modelo: "Demio",
     ano: 2016,
-    infomacaoCarro() {
+    informacaoCarro() {
       return `${this.marca} ${this.modelo} (${this.ano})`;
     }
   };
-  console.log(CARRO.infomacaoCarro());
+  console.log(CARRO.informacaoCarro());
